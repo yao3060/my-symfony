@@ -7,3 +7,4 @@ src/package.tar
 src/packages.json
 src/.phpunit
 src/.env
+.idea/
