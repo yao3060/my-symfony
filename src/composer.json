@@ -1,0 +1,19 @@
+{
+    "name": "yao/src",
+    "authors": [{
+        "name": "姚迎迎",
+        "email": "yao3060@gmail.com"
+    }],
+    "require": {
+        "doctrine/orm": "^2.6.2",
+        "symfony/http-foundation": "^4.2",
+        "symfony/routing": "^4.2",
+        "symfony/http-kernel": "^4.2",
+        "symfony/dotenv": "^4.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}

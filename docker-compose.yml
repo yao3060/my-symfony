@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+
+  #PHP Service
+  app:
+    image: php:7.2-apache
+    restart: always
+    ports:
+      - 8080:80
+    volumes:
+     - ./src:/var/www
+    environment:
+      DB_HOST: db
+      DB_USER: exampleuser
+      DB_PASSWORD: examplepass
+      DB_NAME: exampledb
+
+  db:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_DATABASE: exampledb
+      MYSQL_USER: exampleuser
+      MYSQL_PASSWORD: examplepass
+      MYSQL_RANDOM_ROOT_PASSWORD: '1'

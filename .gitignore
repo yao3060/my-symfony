@@ -1,0 +1,9 @@
+src/vendor/
+src/composer.lock
+src/phpunit.xml
+src/.php_cs.cache
+src/composer.phar
+src/package.tar
+src/packages.json
+src/.phpunit
+src/.env
